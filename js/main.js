@@ -113,12 +113,16 @@ function cambiarTijera(){
     if(valorTijera == cambiar[rand(10)-1]){
         document.getElementById("img-pc").src = "images/tijera-pc.png"
         document.getElementById("resultado").textContent = "Empate";
+        scorepc += 1
+        intPc.innerHTML = scorepc;
         var fecha = new Date();
         history.innerHTML += "[" + fecha.getSeconds() + " seg" + "]" + " Empate<br>";
     } else if(valorTijera > cambiar[rand(10)-1]){
         document.getElementById("img-pc").src = "images/piedra-pc.png"
         document.getElementById("resultado").textContent = "Gana PC";
         document.getElementById("scorepc").textContent = +1;
+        scorepc += 1
+        intPc.innerHTML = scorepc;
         var fecha = new Date();
         history.innerHTML += "[" + fecha.getSeconds() + " seg" + "]" + " Gana PC<br>";
     } else{
