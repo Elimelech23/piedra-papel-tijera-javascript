@@ -115,7 +115,7 @@ function cambiarTijera(){
         document.getElementById("resultado").textContent = "Empate";
         var fecha = new Date();
         history.innerHTML += "[" + fecha.getSeconds() + " seg" + "]" + " Empate<br>";
-    } else if(valorTijera < cambiar[rand(10)-1]){
+    } else if(valorTijera > cambiar[rand(10)-1]){
         document.getElementById("img-pc").src = "images/piedra-pc.png"
         document.getElementById("resultado").textContent = "Gana PC";
         document.getElementById("scorepc").textContent = +1;
